@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta name="description" content="Привет! Это мое тестовое задание, на этой странице я постараюсь вам понравится и показать свои навыки.">
+        <meta name="keywords" content="TЗ, Тестовое заднание, войти в IT, Шумков Сергей Александрович, frontend"/>
+        <meta name="author" content="Shumkov Sergey">
+        <title>Шумков Сергей Александрович | Тестовое заднание</title>
+        <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css?v=1.1" rel="stylesheet" type="text/css">
+    </head>
+    <body class="body">
+        <header class="section-top">
+            <div class="container container__top">
+                <a href="#openModalphone" class="top-right__menu-phone">
+                    <span class="top-right__menu-phone-line1"></span>
+                    <span class="top-right__menu-phone-line2"></span>
+                </a>
+                <div class="top-left">
+                    <img src="img/logo.svg" loading="lazy" alt="logo">
+                    <div class="top-left_wrapper-sity">
+                        <a href="#" class="top-left__menu-button" id="btnfilter">
+                            <div class="top-left__icon">
+                                <img src="img/city.svg" loading="lazy" alt="city">
+                            </div>
+                            <div class="top-left__text-block">
+                                <p class="font-style-medium" id="text-filter">Москва</p>
+                            </div>
+                        </a>
+                        <div class="top-left_block-sity" id="openfilter">
+                            <div class="block-sity_search">
+                                <input type="search" class="sity-search" id="filter" placeholder="Регион, город, населенный пункт" onChange="oninput(this.value)">
+                                <span class="close" onclick="document.getElementById('filter').value = '';clearOninput();"><img src="img/close.svg" loading="lazy" alt="close"></span>
+                            </div>
+                            <div class="block-sity_select" id="sity_select"></div>
+                            <div class="block-sity_list" id="sity_list">
+                                <svg class="spinner" viewBox="0 0 50 50">
+                                    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="3"></circle>
+                                </svg>
+                            </div>
+                            <button class="block-sity_button" type="button">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-center">
+                    <img src="img/Union.svg" loading="lazy" alt="search" class="top-search_img">
+                    <input type="text" class="top-search" id="search" placeholder="Учебное заведение, специальность или профессия">
+                    <span class="close" onclick="document.getElementById('search').value = '';"><img src="img/close.svg" loading="lazy" alt="close"></span>
+                </div>
+                <div class="top-right">
+                    <a href="#" class="top-right__button_like">
+                        <img src="img/favorite.svg" loading="lazy" alt="city">
+                        <div class="top-right__text-block">
+                            <span class="font-style-medium">0</span>
+                        </div>
+                    </a>
+                    <a href="#openModal" class="top-right__button_in">
+                        <div class="top-right__text-block">
+                            <span class="font-style-medium">Сергей</span>
+                        </div>
+                        <img src="img/avatar.jpg" loading="lazy" alt="city" class="top-right__img_in">
+                    </a>
+                </div>
+            </div>
+            <div class="container menu_section"> 
+                <div class="menu_wrapper">
+                    <nav class="menu_row" id="menu_viewer">
+                        <div class="container__menu" id="menu_content">
+                            <a href="#" class="container__menu_link">Вузы</a>
+                            <a href="#" class="container__menu_link">Колледжи</a>
+                            <a href="#" class="container__menu_link">Техникумы</a>
+                            <a href="#" class="container__menu_link">Училища</a>
+                            <a href="#" class="container__menu_link">Специальности</a>
+                            <a href="#" class="container__menu_link">Профессии</a>
+                            <a href="#" class="container__menu_link">Отзывы</a>
+                            <a href="#" class="container__menu_link">Учебным заведениям</a>
+                            <a href="#" class="container__menu_link">Тест на профориентацию</a>
+                            <a href="#" class="container__menu_link">Контакты</a>
+                        </div>
+                    </nav>
+                    <a class="menuBtnLeft" id="menuBtnLeft"><img src="img/Vectorl.svg" loading="lazy" alt="menuBtn"></a>
+                    <a class="menuBtnRight" id="menuBtnRight"><img src="img/Vectorr.svg" loading="lazy" alt="menuBtn"></a>
+                </div>
+            </div>
+        </header>
+        <main class="section-wrapper" id="wrapper"></main>
+        <div class="offcanvas">
+            <div class="offcanvas_overlay" id="openModal">
+                <div class="offcanvas_overlay_dark"></div>
+                <div class="offcanvas_window">
+                    <a href="#close" class="offcanvas_close"></a>
+                    <div class="offcanvas_wrapper">
+                        <div class="window_block">
+                            <div>
+                                <span class="font-style-grey margin-bottom-64 margin-top-8">Задание выполнил</span>
+                                <h2 class="font-style-h4 margin-bottom-24">Шумков<br>Сергей Александрович</h2>
+                                <p><br>Человек из Кемерово.<br>1990 года рождения. Семейный.<br>
+                                    Уже давненько получал специальность по направлению ВТ и АС,<br> с тех пор много изучал сам и переучивался,<br> 
+                                    успел поработать как дизайнером так програмистом,<br> сейчас ищу классную команду чтобы прокачать себя еще больше в любимой профессии.<br>
+                                    И готов делиться всем что сам умею.<br><br>
+                                </p>
+                                <p class="typography-h4">8 960 923-67-66</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script async src="js/script.js?v=1.1" type="text/javascript"></script>
+    </body>
+</html>
